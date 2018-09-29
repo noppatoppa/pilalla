@@ -60,6 +60,9 @@ def save_img(img):
 
 
 def pilalla():
+    """
+    Main
+    """
     image = background()
     image_with_text = set_text(image, random.choice(PILALLA))
     save_img(image_with_text)
