@@ -24,7 +24,8 @@ PILALLA = (
     "Politiikka",
     "Paini",
     "Urheilu",
-    "Talous"
+    "Talous",
+    "Luonto"
 )
 
 
@@ -44,9 +45,9 @@ def set_text(img, text):
     :param text: String
     :return: Image object with text
     """
-    font = ImageFont.truetype("FreeSans.ttf", 15)
+    font = ImageFont.truetype("FreeSans.ttf", 250)
     d = ImageDraw.Draw(img)
-    d.text((75, 110), text=f"{text} on pilalla,\npelkkää paskaa tilalla", fill=(255, 255, 255), align='center',
+    d.text((400, 3100), text=f"{text} on pilalla,\npelkkää paskaa tilalla", fill=(255, 255, 255), align='center',
            font=font)
     return img
 
